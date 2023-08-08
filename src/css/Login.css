@@ -1,0 +1,91 @@
+/* Styles for the main container of the login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px;
+  }
+  
+  /* Styles for the header of the login page */
+  h2 {
+    color: #333; /* Dark gray header text color */
+    margin-bottom: 30px; /* Add some spacing between the header and the form */
+  }
+  
+  /* Styles for form groups to group form elements */
+  .form-group {
+    width: 100%;
+    max-width: 400px; /* Limit the form width on wider screens */
+    margin-bottom: 20px; /* Add space between form groups */
+  }
+  
+  /* Styles for input fields and their labels */
+  .form-label {
+    display: block; /* Display the label as a block to add spacing */
+    margin-bottom: 5px; /* Space between the label and the input field */
+    color: #555; /* Medium gray label text color */
+  }
+  
+  /* Input field styles */
+  .form-input {
+    width: 100%; /* Make the input fields take up the full width of the form group */
+    padding: 10px; /* Add padding to the input fields */
+    border: 1px solid #ccc; /* Light gray border for the input fields */
+    border-radius: 5px; /* Rounded corners for a softer appearance */
+    font-size: 16px;
+  }
+  
+  /* Error message styling */
+  .alert {
+    margin-top: 5px; /* Add spacing above the error message */
+    padding: 10px; /* Add padding to the error message */
+    border-radius: 5px; /* Rounded corners for the error message box */
+    text-align: center; /* Center the error message text */
+  }
+  
+  .alert-danger {
+    color: #a94442; /* Dark red text color for error messages */
+    background-color: #f2dede; /* Light red background for error messages */
+    border-color: #ebccd1; /* Slightly darker red border for error messages */
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 10px 20px; /* Add padding around the button text */
+    border: none; /* Remove the default button border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Add a smooth transition effect on button hover */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Blue background for primary buttons */
+    color: white; /* White text color for primary buttons */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue background on button hover */
+  }
+  
+  /* If the button is disabled (e.g., during loading), adjust its appearance */
+  .btn:disabled {
+    cursor: not-allowed; /* Change the cursor to indicate the button is disabled */
+    opacity: 0.6; /* Reduce the opacity to make the button appear disabled */
+  }
+  
+  /* Container for the submit button */
+  .submit-button {
+    display: flex;
+    justify-content: center; /* Center the submit button horizontally */
+    margin-top: 20px; /* Add spacing above the submit button */
+  }
+  
+  /* Additional styles for input field name (if needed) */
+  .InputFieldName {
+    background-color: white; /* White background for the input field name */
+  }
+  

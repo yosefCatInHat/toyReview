@@ -1,0 +1,175 @@
+/* Toys.css */
+
+/* Styles for the container of all toys */
+.Toys-container {
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center; /* Center items horizontally */
+flex-wrap: wrap; /* Allow items to wrap onto the next line if they run out of space */
+align-items: center; /* Center items vertically */
+width: 100%; /* Add some spacing between items */
+}
+
+/* Dark mode styles for the container of all toys */
+.Toys-container.dark-mode {
+background-color: #2f414f;
+color: white;
+}
+
+/* Styles for the card of each toy */
+.toy-card {
+width: fit-content; /* Adjust this to change card size */
+margin: 0px 5px; /* Vertical spacing and horizontal centering */
+border-radius: 10px; /* Rounded corners */
+border: 1px solid #ddd; /* Border */
+box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2); /* Shadow for a 'lifting' effect */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #fff; /* Card background color */
+}
+
+/* Dark mode styles for the card of each toy */
+.dark-mode .toy-card {
+background-color: #3c5970; /* Dark mode card background color */
+color: #fff; /* Text color for dark mode */
+border-color: #555; /* Border color for dark mode */
+}
+
+/* Styles for the image of the toy */
+.toy-card img {
+height: 100px;
+width: 100px;
+object-fit: cover;
+margin-bottom: 15px;
+border-radius: 50%;
+}
+
+/* Styles for the name of the toy */
+.toyName {
+font-size: 1.1rem;
+color: #333;
+margin: 0;
+}
+
+/* Styles for the pagination buttons */
+button {
+justify-content: center;
+margin: 0 5px;
+padding: 10px 20px;
+font-size: 0.9rem;
+color: #fff;
+background-color: #007bff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+/* Styles for the pagination buttons container */
+.Page-buttons {
+display: flex;
+justify-content: center;
+align-items: center; /* vertically aligns items in the middle */
+width: 100%;
+margin-top: 20px; /* Add some top margin for space */
+}
+
+/* Styles for the toy description */
+.toyDescription {
+display: -webkit-box; /* This enables the line-clamp property */
+-webkit-line-clamp: 10; /* This limits the element to display a maximum of 3 lines */
+-webkit-box-orient: vertical; /* Needed to properly limit the number of lines */
+overflow: hidden; /* Hide the overflowed text */
+text-overflow: ellipsis; /* Add the three dots at the end of overflowed text */
+width: 70%; /* adjust this as per your need */
+max-width: 70%; /* limits the width of the description */
+min-height: 70%; /* minimum height */
+max-height: 70%; /* maximum height */
+margin: 0 auto; /* center the text horizontally */
+}
+
+/* Styles for the primary button */
+.btn-primary {
+background-color: #007bff;
+border-color: #007bff;
+color: #fff;
+transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* smooth transition for mode change */
+}
+
+/* Styles for the primary button hover effect */
+.btn-primary:hover {
+background-color: #0056b3;
+border-color: #004499;
+}
+
+/* Dark Mode */
+.dark-mode .btn-primary {
+background-color: #405362;
+border-color: #555;
+color: #fff;
+}
+
+/* Dark Mode - Styles for the primary button hover effect */
+.dark-mode .btn-primary:hover {
+background-color: #1d2d3f;
+border-color: #1a292d;
+}
+
+/* Styles for the pagination page link */
+.pagination .page-link {
+color: #007bff;
+border-color: #dee2e6;
+transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* smooth transition for mode change */
+}
+
+/* Styles for the pagination page link hover effect */
+.pagination .page-link:hover {
+background-color: #e9ecef;
+border-color: #dee2e6;
+color: #0056b3;
+}
+
+/* Styles for the active pagination page link */
+.pagination .page-item.active .page-link {
+background-color: #007bff;
+border-color: #007bff;
+color: #fff;
+}
+
+/* Styles for the disabled pagination page link */
+.pagination .page-item.disabled .page-link {
+color: #868e96;
+background-color: #fff;
+border-color: #dee2e6;
+}
+
+/* Dark Mode - Styles for the pagination page link */
+.dark-mode .pagination .page-link {
+color: #2f414f;
+border-color: #555;
+background-color: #232a33;
+}
+
+/* Dark Mode - Styles for the pagination page link hover effect */
+.dark-mode .pagination .page-link:hover {
+background-color: #1d2d3f;
+border-color: #1a292d;
+color: #fff;
+}
+
+/* Dark Mode - Styles for the active pagination page link */
+.dark-mode .pagination .page-item.active .page-link {
+background-color: #2f414f;
+border-color: #555;
+color: #fff;
+}
+
+/* Dark Mode - Styles for the disabled pagination page link */
+.dark-mode .pagination .page-item.disabled .page-link {
+color: #5f6d7a;
+background-color: #232a33;
+border-color: #555;
+}

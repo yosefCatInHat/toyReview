@@ -1,0 +1,110 @@
+/* Styles for the form using Formik */
+.Formik {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal-content {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for form groups within the form */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for form labels */
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  /* Styles for form input fields of type "text" and "date" */
+  .form-group input[type="text"],
+  .form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Styles for error messages displayed in case of validation errors */
+  .alert.alert-danger {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  /* Styles for the submit button */
+  .btn.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* Hover styles for the submit button */
+  .btn.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Light mode (default) styles for the submit button */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  }
+  
+  /* Add styles for any other Bootstrap components you're using */
+  
+  /* Dark mode styles */
+  .dark-mode .btn-primary {
+    background-color: #648197;
+    border-color: #555;
+    color: #fff;
+  }
+  
+  .dark-mode .modal-header,
+  .dark-mode .modal-body,
+  .dark-mode .modal-footer {
+    background-color: #232a33;
+    color: #fff;
+  }
+  
+  .dark-mode .form-label {
+    color: #bfc5cc;
+  }
+  
+  .dark-mode .form-group input[type="text"],
+  .dark-mode .form-group input[type="date"] {
+    background-color: #1a2a3a;
+    border: 1px solid #555;
+    color: #fff;
+  }
+  
+  .dark-mode .alert-danger {
+    background-color: #772e2e;
+    color: #fff;
+    border-color: #5a2323;
+  }
+  

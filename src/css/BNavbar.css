@@ -1,0 +1,81 @@
+/* BNavbar.css */
+
+/* Styles for the navigation bar */
+.navbar {
+  background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the brand (logo) in the navigation bar */
+.navbar-brand span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Styles for the navigation links in the navigation bar */
+.navbar .nav-link {
+  color: #ffffff;
+}
+
+/* Hover styles for the navigation links in the navigation bar */
+.navbar .nav-link:hover {
+  color: #000000;
+}
+
+/* Styles for the outline info buttons in the navigation bar */
+.navbar .btn-outline-info {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+/* Hover styles for the outline info buttons in the navigation bar */
+.navbar .btn-outline-info:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* Styles for the navigation bar in dark mode */
+.dark-mode .navbar {
+  background: linear-gradient(to right, #373B44, #4286f4);
+}
+
+/* Styles for the brand (logo) in dark mode */
+.dark-mode .navbar-brand span {
+  color: #f8f9fa;
+}
+
+/* Styles for the navigation links in dark mode */
+.dark-mode .navbar .nav-link {
+  color: #f8f9fa;
+}
+
+/* Hover styles for the navigation links in dark mode */
+.dark-mode .navbar .nav-link:hover {
+  color: #adb5bd;
+}
+
+/* Styles for the outline info buttons in dark mode */
+.dark-mode .navbar .btn-outline-info {
+  color: #ffffff;
+  border-color: #052e6b;
+}
+
+/* Hover styles for the outline info buttons in dark mode */
+.dark-mode .navbar .btn-outline-info:hover {
+  color: #fff;
+  background-color: #405362;
+}
+
+/* Additional styles for flexbox alignment */
+.ml-auto {
+  margin-left: auto;
+}
+
+/* Styles for the dark mode toggle button */
+.darkMode {
+  display: flex;
+  justify-content: center; /* for horizontal centering */
+  align-items: center;
+  font-size: 1.5em;
+}

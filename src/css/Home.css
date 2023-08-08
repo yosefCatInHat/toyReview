@@ -1,0 +1,100 @@
+/* Home.css */
+
+/* Styles for the home container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px); /* Assuming a header or nav might take up some space */
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background for contrast */
+    font-family: 'Arial', sans-serif; /* Defaulting to Arial but you can use any preferred font */
+  }
+  
+  /* Styles for the home container title */
+  .home-container h1 {
+    font-size: 2.5em; /* Make the title stand out */
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  }
+  
+  /* Styles for the home container paragraphs */
+  .home-container p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px; /* Ensure readability on wider screens */
+    text-align: center; /* Centered text as the div itself is also centered */
+    margin-bottom: 20px;
+  }
+  
+  /* Add some responsive breakpoints if needed */
+  
+  /* Styles for medium-sized screens */
+  @media (max-width: 768px) {
+    .home-container h1 {
+      font-size: 2em;
+    }
+  
+    .home-container p {
+      font-size: 1em;
+    }
+  }
+  
+  /* Styles for small-sized screens */
+  @media (max-width: 480px) {
+    .home-container h1 {
+      font-size: 1.5em;
+    }
+  
+    .home-container p {
+      font-size: 0.9em;
+      padding: 0 10px; /* Add some padding so the text doesn't touch the screen edges */
+    }
+  }
+  
+  /* Home.css (Extended for Dark Mode) */
+  
+  /* ... [The previous styles go here] ... */
+  
+  /* Dark Mode Styles */
+  
+  /* Styles for the home container in dark mode */
+  .dark-mode .home-container {
+    background-color: #1f1f1f; /* Dark background */
+    color: #ddd; /* Light gray text for contrast */
+  }
+  
+  /* Styles for the home container title in dark mode */
+  .dark-mode .home-container h1 {
+    color: #eee; /* Slightly brighter color for headings */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow for dark background */
+  }
+  
+  /* Styles for the home container paragraphs in dark mode */
+  .dark-mode .home-container p {
+    color: #ccc; /* Medium-light gray text for better readability */
+  }
+  
+  /* Dark mode styles for the breakpoints too (if needed) */
+  @media (max-width: 768px) {
+    .dark-mode .home-container h1 {
+      color: #eee;
+    }
+  
+    .dark-mode .home-container p {
+      color: #ccc;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dark-mode .home-container h1 {
+      color: #eee;
+    }
+  
+    .dark-mode .home-container p {
+      color: #ccc;
+    }
+  }
+  

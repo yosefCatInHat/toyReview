@@ -1,0 +1,78 @@
+/* Main container for the registration page */
+.Register-containor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Styles for the header */
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styles for form groups */
+.form-group {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Styles for input fields and labels */
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input field styles */
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Error message styling */
+.alert {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* If the button is disabled (e.g., during loading), adjust its appearance */
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
