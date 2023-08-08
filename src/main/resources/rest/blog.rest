@@ -1,0 +1,165 @@
+### Create a new Post:
+POST http://localhost:8080/api/v1/toys
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjk2NjQ0MjQ1LCJpYXQiOjE2OTE0NjAyNDV9.fmjnAaKZxj-0kVy14GeaAajtCrgfVgh1QyvuuKAJvF0
+
+{
+  "toyName": "necdr8sesdddons",
+  "toyDescription": "ne8decdddrosns",
+  "toyDate": "1",
+  "toyImage": "necrdodddesns"
+}
+
+### Another Post:
+POST http://localhost:8081/api/v1/posts
+Content-Type: application/json
+
+{
+  "title": "Learn Spring Security",
+  "description": "Authentication And Authorization",
+  "content": "Start with HTTP Basic Security And HTTP Form"
+}
+
+### Invalid Post:
+POST http://localhost:8081/api/v1/posts
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "Authentication And Authorization",
+  "content": "Start with HTTP Basic Security And HTTP Form",
+  "toyImage": "fffffffffgff"
+}
+
+### Get all Posts With Basic Auth:
+GET http://localhost:8081/api/v1/posts
+Authorization: Basic user user
+
+### Get all Posts With JWT Auth:
+GET http://localhost:8080/api/v1/toys
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5NjA5ODc3NSwiaWF0IjoxNjkwOTE0Nzc1fQ.I0PpYRgwl7LbANhAFYtlTI18eNjTecEJJqATVEC6o2I
+
+
+### Get Post By Id:
+GET http://localhost:8081/api/v1/posts/-11
+
+### Update Post By Id:
+PUT http://localhost:8081/api/v1/posts/2
+Content-Type: application/json
+
+{
+  "title": "Learn Spring Security",
+  "description": "Authentication And Authorization",
+  "content": "Start with HTTP Basic Security And HTTP Form"
+}
+
+### Delete a post by id:
+DELETE http://localhost:8080/api/v1/posts/id
+
+### Pagination:
+GET http://localhost:8080/api/v1/toys/page?pageSize=1&pageNo=1
+
+
+### Pagination with sort dir:
+GET http://localhost:8081/api/v1/posts/page?pageSize=5&pageNo=0&sortBy=title&sortDir=asc
+
+
+### Add A Comment:
+POST http://localhost:8080/api/v1/toys/2/toyReviews
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY5NjA5ODc3NSwiaWF0IjoxNjkwOTE0Nzc1fQ.I0PpYRgwl7LbANhAFYtlTI18eNjTecEJJqATVEC6o2I
+
+{
+  "name": "Lea",
+  "body": "Nice Read. Hope you make a post about OAuth2 authentication"
+}
+
+### Get Comments By Post Id:
+GET http://localhost:8081/api/v1/posts/52/comments
+
+### GET Comment By Comment Id:
+GET http://localhost:8081/api/v1/comments/2
+
+### Update a comment:
+PUT http://localhost:8081/api/v1/comments/2
+Content-Type: application/json
+
+{
+  "name": "Lea",
+  "email": "Lea@gmail.com",
+  "body": "Nice Read. Hope you make a post about OAuth2 authentication!!"
+}
+
+### Delete a comment:
+DELETE http://localhost:8081/api/v1/comments/3
+
+
+### Create a new Post:
+POST http://localhost:8081/api/v1/posts
+Content-Type: application/json
+Authorization: Basic user user
+
+{
+  "title": "Production Ready Features 1",
+  "description": "3 Pillars of Observability 1",
+  "content": "Logs, Metrics, Tracing 1"
+}
+
+
+
+### Sign in:
+
+POST http://localhost:8080/api/v1/auth/signin
+Content-Type: application/json
+Authorization: Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoxNjk2MTA0MTI3LCJpYXQiOjE2OTA5MjAxMjd9.jYl1UWTNqe9tndkMrId8os4RRHOXuD-yFnMiATdZnkU
+
+{
+  "username": "test",
+  "password": "testtest"
+}
+
+### Create a new Post:
+POST http://localhost:8081/api/v1/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTY4NTYzMTQ0MiwiaWF0IjoxNjgwNDQ3NDQyfQ.bzqXcbg6KBWXc-3rdWRJnuWJildOxuIusEmXYxEUF34
+
+{
+  "title": "HTTPS With Lets Encrypt3",
+  "description": "TLS3",
+  "content": "secure connections3"
+}
+
+
+### register a new user:
+POST http://localhost:8080/api/v1/auth/signup
+Content-Type: application/json
+
+{
+  "email": "bruce1@bateecave.com",
+  "username": "Baeeet1man",
+  "password": "123456"
+}
+
+
+
+
+### Sign in:
+
+POST http://localhost:8080/api/v1/auth/signin
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "user"
+}
+
+
+### Open Api V3 Docs:
+http://localhost:8081/swagger-ui/index.html
+
+http://localhost:8081/api-docs
+
+###get all users
+GET http://localhost:8080/api/v1/users/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNjk2Njg5ODczLCJpYXQiOjE2OTE1MDU4NzN9.aVogKkSn06bSgRGOAPxelYJL6EA1cR3SK4m5DRkYs8o
