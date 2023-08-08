@@ -28,7 +28,7 @@ public class ToysWithToyReviewDto {
     @NotNull
     private String toyDescription;
 
-    // toyUserId
+    // toyDate
     @NotNull
     private String toyDate;
 

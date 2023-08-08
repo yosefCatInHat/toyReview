@@ -28,7 +28,7 @@ public class ToyDto {
     @Size(min = 3, message = "Description must contain at least 3 characters")
     private String toyDescription;
 
-    // The toyUserId
+    // The toyDate
     @NotNull
     private String toyDate;
 

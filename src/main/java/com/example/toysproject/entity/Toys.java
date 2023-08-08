@@ -34,7 +34,7 @@ public class Toys {
     @NotNull
     private String toyDescription;
 
-    // toyUserId
+    // toyDate
     @NotNull
     private String toyDate;
 
